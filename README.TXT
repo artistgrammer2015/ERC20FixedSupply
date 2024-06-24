@@ -59,4 +59,13 @@ truffle(testnet)> ERC20FixedSupply.deployed().then(function(instance){return ins
 注意这里amount要写成字符串，否则数字会溢出，实际转账金额要/decimal(默认是18)
 ERC20FixedSupply.deployed().then(function(instance){return instance.transfer('0x30B1DeFB55e442c926732574b9cBCDeFa5a7eC48', '10000000000000000000000');})
 
-8、获取地址余额
+8、truffle commands
+truffle init
+truffle test
+truffle compile
+truffle develop
+truffle migrate --network testnet -f 2
+truffle migrate --network testnet -f 2 --reset --compile-none
+truffle console --network testnet
+
+
