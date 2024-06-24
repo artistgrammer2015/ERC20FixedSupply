@@ -59,6 +59,9 @@ truffle(testnet)> ERC20FixedSupply.deployed().then(function(instance){return ins
 注意这里amount要写成字符串，否则数字会溢出，实际转账金额要/decimal(默认是18)
 ERC20FixedSupply.deployed().then(function(instance){return instance.transfer('0x30B1DeFB55e442c926732574b9cBCDeFa5a7eC48', '10000000000000000000000');})
 
+从合约地址转账到钱包, todo test
+ERC20FixedSupply.deployed().then(function(instance){return instance.transferFrom('0xcA9D8EB62F06CDb7F781FC5a37304BBE892ef701', '0x30B1DeFB55e442c926732574b9cBCDeFa5a7eC48', '1000000000000000000000');}))
+
 8、truffle commands
 truffle init
 truffle test
