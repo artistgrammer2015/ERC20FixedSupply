@@ -70,5 +70,6 @@ truffle develop
 truffle migrate --network testnet -f 2
 truffle migrate --network testnet -f 2 --reset --compile-none
 truffle console --network testnet
+truffle development
 
 
